@@ -1,6 +1,6 @@
 # src/equity_model/__version__.py
 """
-Version information for Equity Model package.
+Информация о версии пакета Equity Model.
 """
 
 __version__ = "0.1.0-dev"
@@ -16,15 +16,15 @@ __python_requires__ = ">=3.11"
 
 
 def get_version() -> str:
-    """Get the current package version as a string."""
+    """Получить текущую версию пакета в виде строки."""
     return __version__
 
 
 def get_version_info() -> tuple:
-    """Get the current package version as a tuple."""
+    """Получить текущую версию пакета в виде кортежа."""
     return __version_info__
 
 
 def is_stable() -> bool:
-    """Check if the current version is stable (production ready)."""
+    """Проверить, является ли текущая версия стабильной.."""
     return __status__ == "stable"

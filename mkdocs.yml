@@ -9,6 +9,15 @@ theme:
     - scheme: default
       primary: blue
 
+plugins:                    
+  - search
+  - mkdocstrings:           
+      handlers:
+        python:
+          paths: [src]
+          options:
+            docstring_style: google
+
 nav:
   - Главная: index.md
   - Дорожная карта: ROADMAP.md
@@ -21,3 +30,4 @@ nav:
 markdown_extensions:
   - tables
   - toc
+  - attr_list

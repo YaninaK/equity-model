@@ -374,6 +374,7 @@ version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
     { name = "matplotlib" },
+    { name = "mkdocstrings", extra = ["python"] },
     { name = "numpy" },
     { name = "pandas" },
     { name = "plotly" },
@@ -398,6 +399,7 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "matplotlib", specifier = ">=3.10.8" },
+    { name = "mkdocstrings", extras = ["python"], specifier = ">=1.0.3" },
     { name = "numpy", specifier = ">=2.4.2" },
     { name = "pandas", specifier = ">=3.0.1" },
     { name = "plotly", specifier = ">=6.5.2" },
@@ -413,9 +415,9 @@ requires-dist = [
 dev = [
     { name = "black", specifier = ">=26.1.0" },
     { name = "isort", specifier = ">=8.0.0" },
-    { name = "mkdocs", specifier = ">=1.6.1" },
-    { name = "mkdocs-material", specifier = ">=9.7.2" },
-    { name = "mkdocstrings", extras = ["python"], specifier = ">=1.0.3" },
+    { name = "mkdocs", specifier = "<=2.0" },
+    { name = "mkdocs-material", specifier = ">=9.0" },
+    { name = "mkdocstrings", extras = ["python"], specifier = ">=0.24" },
     { name = "mypy", specifier = ">=1.19.1" },
 ]
 
