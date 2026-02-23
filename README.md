@@ -68,6 +68,7 @@ equity-model/
 - **Паспорт методологии**: `docs/methodology/`
 - **API документация**: `docs/api/` 
 - **Отчёты**: `docs/reports/` 
+- **Changelog**: `docs/reports/CHANGELOG.md` 
 
 ---
 
