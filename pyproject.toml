@@ -4,9 +4,7 @@ version = "0.1.0"
 description = "Equity Model — Monte Carlo Simulation for Equity Pricing"
 readme = "README.md"
 requires-python = ">=3.11"
-dependencies = [
-    "black>=26.1.0",
-    "isort>=8.0.0",
+dependencies = [  
     "matplotlib>=3.10.8",
     "numpy>=2.4.2",
     "pandas>=3.0.1",
@@ -19,15 +17,25 @@ dependencies = [
     "statsmodels>=0.14.6",
 ]
 
+[tool.mypy]
+mypy_path = "src"
+packages = ["equity_model"]
+exclude = ["^tests/", "^docs/"]
+
 [tool.setuptools.packages.find]
 where = ["src"]
 
 [tool.uv.workspace]
 members = []
 
+
+
 [dependency-groups]
 dev = [
+    "black>=26.1.0",
+    "isort>=8.0.0",
     "mkdocs>=1.6.1",
     "mkdocs-material>=9.7.2",
     "mkdocstrings[python]>=1.0.3",
+    "mypy>=1.19.1",
 ]

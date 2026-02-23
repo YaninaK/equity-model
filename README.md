@@ -33,31 +33,35 @@ pip install -e .
 
 ```
 equity-model/
-├── README.md
-├── .gitignore
-├── .python-version
-├── pyproject.toml
-├── requirements.txt
-├── config/                 # Конфигурационные файлы (в разработке)
-├── data/                   # Данные (raw, processed, cache)
-├── docs/                   # Документация и отчёты
-├── notebooks/              # Jupyter ноутбуки для прототипирования
-├── src/equity_model/       # Исходный код модели
-│   ├── 01_data/               # Этап 1: Инфраструктура данных
-│   ├── 02_clustering/         # Этап 2: Кластеризация 
-│   ├── 03_calibration/        # Этап 3: Калибровка 
-│   ├── 04_short_term/         # Этап 4: Краткосрочная модель
-│   ├── 05_long_term/          # Этап 5: Долгосрочная модель
-│   ├── 06_stress/             # Этап 6: Стресс-тестирование
-│   ├── 07_comparison/         # Этап 7: Сравнение моделей
-│   ├── 08_backtest/           # Этап 8: Бэктестирование
-│   ├── 09_production/         # Этап 9: Оптимизация
-│   └── 10_reporting/          # Этап 10: Отчётность
-├── tests/                  # Тесты
-├── scripts/                # Скрипты запуска
-├── airflow/                # DAG для оркестрации
-└── monitoring/             # Grafana дашборды
+├── README.md                    # Основная документация
+├── CHANGELOG.md                 # История изменений
+├── pyproject.toml               # Конфигурация проекта
+├── uv.lock                      # Заблокированные зависимости
+├── mkdocs.yml                   # Конфигурация документации
+├── mypy.ini                     # Настройки mypy
+│
+├── src/equity_model/            # Исходный код пакета
+│   ├── data/                    # Этап 1: Данные
+│   ├── clustering/              # Этап 2: Кластеризация
+│   ├── calibration/             # Этап 3: Калибровка
+│   ├── short_term/              # Этап 4: Краткосрочная модель
+│   ├── long_term/               # Этап 5: Долгосрочная модель
+│   ├── stress/                  # Этап 6: Стресс-тесты
+│   ├── comparison/              # Этап 7: Сравнение моделей
+│   ├── backtest/                # Этап 8: Бэктестирование
+│   ├── production/              # Этап 9: Оптимизация
+│   └── reporting/               # Этап 10: Отчётность
+│
+├── tests/                       # Тесты
+├── docs/                        # Документация
+├── scripts/                     # Скрипты запуска
+├── config/                      # Конфигурационные файлы
+├── data/                        # Данные проекта
+├── notebooks/                   # Jupyter ноутбуки
+├── airflow/                     # Оркестрация пайплайнов
+└── monitoring/                  # Мониторинг и алерты
 ```
+
 ---
 
 ## Документация
@@ -68,7 +72,6 @@ equity-model/
 - **Паспорт методологии**: `docs/methodology/`
 - **API документация**: `docs/api/` 
 - **Отчёты**: `docs/reports/` 
-- **Changelog**: `docs/reports/CHANGELOG.md` 
 
 ---
 
