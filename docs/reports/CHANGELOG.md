@@ -29,7 +29,6 @@
 - Документация: README, ROADMAP, STRUCTURE, DEVELOPMENT_PLAN
 - Настройка MkDocs для генерации документации
 - Конфигурация Git и .gitignore
-- Шаблоны для отчётов и тестов
 
 ### Изменено
 - 
