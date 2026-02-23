@@ -62,9 +62,13 @@ equity-model/
 
 ## Документация
 
+- **Дорожная карта**: `docs/ROADMAP.md`
+- **План разработки**: `docs/DEVELOPMENT_PLAN.md`
+- **Структура проекта**: `docs/STRUCTURE.md`
 - **Паспорт методологии**: `docs/methodology/`
 - **API документация**: `docs/api/` 
 - **Отчёты**: `docs/reports/` 
+
 ---
 
 ## Тестирование
