@@ -24,3 +24,10 @@ where = ["src"]
 
 [tool.uv.workspace]
 members = []
+
+[dependency-groups]
+dev = [
+    "mkdocs>=1.6.1",
+    "mkdocs-material>=9.7.2",
+    "mkdocstrings[python]>=1.0.3",
+]

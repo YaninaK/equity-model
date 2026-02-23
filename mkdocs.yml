@@ -1,0 +1,19 @@
+# mkdocs.yml
+
+site_name: Equity Model Documentation
+repo_url: https://github.com/YaninaK/equity-model
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: blue
+
+nav:
+  - Главная: index.md
+  - План: ROADMAP.md
+  - Структура: STRUCTURE.md
+
+markdown_extensions:
+  - tables
+  - toc

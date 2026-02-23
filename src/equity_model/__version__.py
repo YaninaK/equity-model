@@ -9,7 +9,7 @@ __version_info__ = (0, 1, 0, "dev")
 __author__ = "Yanina Kutovaya"
 __author_email__ = "kutovaiayp@yandex.ru"
 __description__ = "Monte Carlo Simulation for Equity Pricing"
-__url__ = "https://github.com/Yanina-Kutovaya/equity-model"
+__url__ = "https://github.com/YaninaK/equity-model"
 __license__ = "MIT"
 __status__ = "development"
 __python_requires__ = ">=3.11"
