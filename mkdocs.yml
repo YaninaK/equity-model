@@ -11,8 +11,12 @@ theme:
 
 nav:
   - Главная: index.md
-  - План: ROADMAP.md
-  - Структура: STRUCTURE.md
+  - Дорожная карта: ROADMAP.md
+  - План разработки: DEVELOPMENT_PLAN.md
+  - Структура проекта: STRUCTURE.md
+  - API Reference: api/index.md
+  - Методология: methodology/index.md
+
 
 markdown_extensions:
   - tables
