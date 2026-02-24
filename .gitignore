@@ -35,3 +35,4 @@ __pycache__/
 # Отчёты (генерируемые)
 docs/reports/*
 !docs/reports/.gitkeep
+!docs/reports/CHANGELOG.md

@@ -1,0 +1,5 @@
+# data
+liquidity_threshold: 0.20        # Максимальный процент пропусков
+test_window_days: 365            # Окно тестовой выборки
+walk_forward_step: 30            # Шаг Walk-Forward
+min_history_years: 2             # Минимальная история для калибровки
