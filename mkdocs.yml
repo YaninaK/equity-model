@@ -25,6 +25,7 @@ nav:
   - Структура проекта: STRUCTURE.md
   - API Reference: api/index.md
   - Методология: methodology/index.md
+  - Доступ к данным: DATA_ACCESS.md
 
 
 markdown_extensions:
