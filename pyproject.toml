@@ -5,13 +5,12 @@ description = "Equity Model — Monte Carlo Simulation for Equity Pricing"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
-    "matplotlib>=3.10.8",
-    "mkdocstrings[python]>=1.0.3",
+    "matplotlib>=3.10.8",    
+    "moexalgo>=2.4.1",
     "numpy>=2.4.2",
     "pandas>=3.0.1",
     "plotly>=6.5.2",
-    "pytest>=9.0.2",
-    "pytest-cov>=7.0.0",
+    "pyarrow>=23.0.1", 
     "scikit-learn>=1.8.0",
     "scipy>=1.17.1",
     "seaborn>=0.13.2",
@@ -29,14 +28,36 @@ where = ["src"]
 [tool.uv.workspace]
 members = []
 
-
-
 [dependency-groups]
 dev = [
     "black>=26.1.0",
     "isort>=8.0.0",
     "mkdocs<=2.0",
     "mkdocs-material>=9.0",
-    "mkdocstrings[python]>=0.24",
+    "mkdocstrings[python]>=1.0.3",
     "mypy>=1.19.1",
+    "pytest>=9.0.2",
+    "pytest-benchmark>=5.2.3",
+    "pytest-cov>=7.0.0",
+    "pytest-timeout>=2.4.0",
 ]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "-v --cov=src --cov-report=term"
+pythonpath = ["src"]
+
+
+markers = [
+    "unit: marks tests as unit tests",
+    "integration: marks tests as integration tests",
+    "benchmark: marks tests as performance benchmarks",
+    "moex: marks tests that require MOEX connection",
+    "bank: marks tests that require bank storage connection",
+    "slow: marks tests as slow running"
+]
+
+

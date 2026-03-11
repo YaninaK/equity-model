@@ -1,5 +1,43 @@
-# data
-liquidity_threshold: 0.20        # Максимальный процент пропусков
-test_window_days: 365            # Окно тестовой выборки
-walk_forward_step: 30            # Шаг Walk-Forward
-min_history_years: 2             # Минимальная история для калибровки
+# config/base.yaml
+
+data:
+  min_history_years: 2           # Минимальная история для калибровки
+  test_window_days: 365          # Окно тестовой выборки
+  walk_forward_step: 30          # Шаг Walk-Forward
+  walk_forward_folds: 10
+  liquidity_threshold: 0.20      # Максимальный процент пропусков
+  max_forward_fill_days: 5
+  
+  # Источник данных (moex | bank_storage)
+  source: moex
+  
+  # Настройки MOEX
+  moex:
+    exchange: MOEX
+    market: stock
+    engine: stock
+    board: TQBR  # Основной режим торгов
+    
+  # Настройки хранилища банка
+  bank_storage:
+    host: internal-db.vtb.ru
+    port: 5432
+    database: market_data
+    schema: equity
+    table: daily_prices
+    auth_method: kerberos  # или password
+
+paths:
+  raw_data: data/raw
+  processed_data: data/processed
+  metadata: data/processed/metadata.csv
+  prices: data/processed/prices_processed.parquet
+
+calendar:
+  trading_days_per_year: 247  # Реальное число торговых дней
+  exchange: MOEX
+
+logging:
+  level: INFO
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: logs/pipeline.log
