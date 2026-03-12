@@ -1,9 +1,9 @@
 # Методология расчёта параметров риска
 
-**Версия:** 0.2.0  
-**Дата:** 2026-03-12  
-**Статус:** В разработке
-**Связанные документы:** [index.md](index.md), [clustering.md](clustering.md), [regimes.md](regimes.md), [validation.md](validation.md), [PFE_мethodology_compliance.md](PFE_мethodology_compliance.md)
+- **Версия:** 0.2.0  
+- **Дата:** 2026-03-12  
+- **Статус:** В разработке
+- **Связанные документы:** [index.md](index.md), [clustering.md](clustering.md), [regimes.md](regimes.md), [validation.md](validation.md), [PFE_мethodology_compliance.md](PFE_мethodology_compliance.md)
 
 ---
 

@@ -1,9 +1,9 @@
 # Cоответствие учета рыночных режимов PFE Methodology
 
-**Версия:** 0.2.0  
-**Дата:** 2026-03-12 
-**Статус:** В разработке
-**Связанные документы:** [index.md](index.md), [clustering.md](clustering.md), [regimes.md](regimes.md), [risk_parameters.md](risk_parameters.md), [validation.md](validation.md)
+- **Версия:** 0.2.0  
+- **Дата:** 2026-03-12 
+- **Статус:** В разработке
+- **Связанные документы:** [index.md](index.md), [clustering.md](clustering.md), [regimes.md](regimes.md), [risk_parameters.md](risk_parameters.md), [validation.md](validation.md)
 
 Ниже приведено подробное пояснение методики расчёта Potential Future Exposure (PFE) с учётом рыночных режимов и соответствия требованиям регулятора.
 

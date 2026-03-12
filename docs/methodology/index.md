@@ -1,9 +1,9 @@
 # Методология Equity Model
 
-**Версия:** 0.2.0 (с учётом Этапа 2 — Кластеризация и Режимы)  
-**Дата:** 2026-03-12  
-**Статус:** В разработке 
-**Связанные документы:** [clustering.md](clustering.md), [regimes.md](regimes.md), [risk_parameters.md](risk_parameters.md), [validation.md](validation.md), [PFE_мethodology_compliance.md](PFE_мethodology_compliance.md)
+- **Версия:** 0.2.0 (с учётом Этапа 2 — Кластеризация и Режимы)  
+- **Дата:** 2026-03-12  
+- **Статус:** В разработке 
+- **Связанные документы:** [clustering.md](clustering.md), [regimes.md](regimes.md), [risk_parameters.md](risk_parameters.md), [validation.md](validation.md), [PFE_мethodology_compliance.md](PFE_мethodology_compliance.md)
 
 ---
 

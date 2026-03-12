@@ -1,9 +1,9 @@
 # Методология определения рыночных режимов
 
-**Версия:** 0.2.0  
-**Дата:** 2026-03-12
-**Статус:** В разработке
-**Связанные документы:** [index.md](index.md), [clustering.md](clustering.md), [risk_parameters.md](risk_parameters.md), [validation.md](validation.md),  [PFE_мethodology_compliance.md](PFE_мethodology_compliance.md)
+- **Версия:** 0.2.0  
+- **Дата:** 2026-03-12
+- **Статус:** В разработке
+- **Связанные документы:** [index.md](index.md), [clustering.md](clustering.md), [risk_parameters.md](risk_parameters.md), [validation.md](validation.md),  [PFE_мethodology_compliance.md](PFE_мethodology_compliance.md)
 
 ---
 
