@@ -192,6 +192,7 @@ r_{i,t} = μ_{i,r} + σ_{i,t} × Z_corr[i]
 ```
 
 **Применение консервативных множителей:**
+
 $$ \sigma_{i,t}^{adjusted} = \sigma_t \times M_{history,i} \times M_{liquidity,i} $$
 
 | Группа истории | $M_{history}$ (Beta) | $M_{history}$ (Sigma) |
