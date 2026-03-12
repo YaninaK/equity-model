@@ -140,14 +140,14 @@ $$ \text{Correlation} = 1 - \frac{W_{2}(P_{x}, P_{y})}{2} $$
 
 1. **Режимная корректировка:**
 
-   $$ \rho_{adjusted} = \text{clip}(\rho_{base} + \Delta_{regime}, -1.0, 1.0) $$
+$$ \rho_{adjusted} = \text{clip}(\rho_{base} + \Delta_{regime}, -1.0, 1.0) $$
 
 2. **Ограничение ликвидности:**
    Корреляция liquid-illiquid ограничивается сверху (cap = 0.75).
 
 3. **Конвертация в расстояния:**
 
-   $$ \text{Distance} = \sqrt{2 \times (1 - \text{Correlation})} $$
+$$ \text{Distance} = \sqrt{2 \times (1 - \text{Correlation})} $$
 
 ---
 
