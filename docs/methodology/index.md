@@ -140,6 +140,9 @@ $$ \text{Vol\_Score} = 0.60 \times \text{VIX\_Normalized} + 0.40 \times \text{Hi
 ```latex
 $$ \text{Vol\_Score} = 0.60 \times \text{VIX\_Normalized} + 0.40 \times \text{Hist\_Vol\_Normalized} $$
 ```
+```latex
+$$ Vol&#95;Score = 0.60 \times VIX&#95;Normalized + 0.40 \times Hist&#95;Vol&#95;Normalized $$
+```
 
 | Уровень Vol | VIX-RUS | Историческая Vol (20д) | Параметры модели |
 | :--- | :--- | :--- | :--- |
