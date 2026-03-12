@@ -138,7 +138,8 @@ $$ \text{Direction\_Score} = \sum_{i=1}^{5} (\text{Indicator\_Value}_i \times \t
 <div style="text-align: left;">
 ```math
 $$ \text{Vol\_Score} = 0.60 \times \text{VIX\_Normalized} + 0.40 \times \text{Hist\_Vol\_Normalized}$$
-</div>```
+```
+</div>
 
 
 
