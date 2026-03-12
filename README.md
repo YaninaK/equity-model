@@ -15,7 +15,7 @@
 
 ```bash
 # Клонирование репозитория
-git clone https://github.com/Yanina-Kutovaya/equity-model.git
+git clone https://github.com/YaninaK/equity-model.git
 cd equity-model
 
 # Создание виртуального окружения и установка зависимостей
