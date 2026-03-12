@@ -304,7 +304,7 @@ sigma_daily = 55.6% / √252 = 3.5% в день
 | **1.1 PFE(T, λ)** | $PFE(T, \lambda) = q_\lambda(e_1(T), ..., e_N(T))$ | Квантиль из 10 000 путей с GARCH | Полное |
 | **1.2 EAD** | $EAD(T) = \alpha \times \max EPE(T)$, α = 1.4 | Применяется к максимальному exposure | Полное |
 | **1.2.1 EPE** | $EPE(T) = (1/N) \times \sum e_i(T)$ | Среднее по всем 10 000 путей | Полное |
-| **3.4.1 MR(T)*** | $MR = \sum S_l \times MRR_l \times |Q|$ | Haircuts зависят от Vol Overlay + GARCH | Полное |
+| **3.4.1 MR(T)*** | `$MR = \sum S_l \times MRR_l \times |Q|$` | Haircuts зависят от Vol Overlay + GARCH | Полное |
 | **3.4.2 PR(T)*** | Процентный риск | High Vol -> консервативные ставки | Полное |
 
 ---
