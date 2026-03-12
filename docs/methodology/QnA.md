@@ -61,7 +61,9 @@ $$ \mathbb{E}[\sigma_{t+h}^2 | \mathcal{F}_t] = \frac{\omega}{1 - \alpha - \beta
 | **High Vol** | 0.15 | 0.80 | 0.10 | 0.95 | √(0.10/0.05) = 141% |
 
 > **Примечание:** Параметры ω указаны в **годовой дисперсии**. Для конвертации в дневную:
+
 > $$ \omega_{daily} = \omega_{annual} / 252 $$
+
 > $$ \sigma_{daily} = \sigma_{annual} / \sqrt{252} $$
 
 ---
