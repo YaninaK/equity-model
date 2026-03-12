@@ -165,6 +165,7 @@ sigma_t = np.sqrt(sigma2_t)
 ```
 
 **Формула:**
+
 $$ \sigma_t^2 = \omega_r + \alpha_r \cdot \epsilon_{t-1}^2 + \beta_r \cdot \sigma_{t-1}^2 $$
 
 ---
