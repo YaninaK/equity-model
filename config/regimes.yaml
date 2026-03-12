@@ -1,0 +1,82 @@
+# config/regimes.yaml
+# =============================================================================
+# Regime Configuration (Этап 2)
+# Рыночные режимы и детекция
+# =============================================================================
+
+regimes:
+  all:
+    - BULL_LOW
+    - BULL_NORMAL
+    - BULL_HIGH
+    - NEUTRAL_LOW
+    - NEUTRAL_NORMAL
+    - NEUTRAL_HIGH
+    - BEAR_LOW
+    - BEAR_NORMAL
+    - BEAR_HIGH
+  
+  parameters:
+    BULL_LOW:
+      drift_multiplier: 1.20
+      sigma_multiplier: 0.80
+      correlation_adjustment: -0.10
+      haircut_multiplier: 0.90
+      liquidity_horizon_base: 10
+    BULL_HIGH:
+      drift_multiplier: 0.80
+      sigma_multiplier: 1.30
+      correlation_adjustment: 0.15
+      haircut_multiplier: 1.20
+      liquidity_horizon_base: 15
+    BEAR_LOW:
+      drift_multiplier: 0.70
+      sigma_multiplier: 1.00
+      correlation_adjustment: 0.10
+      haircut_multiplier: 1.10
+      liquidity_horizon_base: 12
+    BEAR_HIGH:
+      drift_multiplier: 0.50
+      sigma_multiplier: 1.50
+      correlation_adjustment: 0.25
+      haircut_multiplier: 1.50
+      liquidity_horizon_base: 20
+
+regime_detection:
+  direction:
+    indicators:
+      price_vs_sma200:
+        weight: 0.30
+        bull_threshold: 1.05
+        bear_threshold: 0.95
+      sma50_vs_sma200:
+        weight: 0.20
+        bull_threshold: 1.02
+        bear_threshold: 0.98
+      market_breadth:
+        weight: 0.20
+        bull_threshold: 0.60
+        bear_threshold: 0.40
+      volume:
+        weight: 0.15
+        bull_threshold: 1.20
+        bear_threshold: 0.80
+      macro:
+        weight: 0.15
+        bull_threshold: 0.60
+        bear_threshold: 0.40
+    bull_score_threshold: 0.60
+    bear_score_threshold: 0.40
+    hysteresis_days: 3
+  
+  volatility:
+    vix_source: VIX-RUS
+    vix_weight: 0.60
+    hist_vol_weight: 0.40
+    hist_window: 20
+    vix_thresholds:
+      low: 20
+      high: 35
+    hist_vol_thresholds:
+      low: 0.15
+      high: 0.25

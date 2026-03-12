@@ -1,0 +1,20 @@
+# config/performance.yaml
+# =============================================================================
+# Performance Configuration
+# Производительность, кэширование, ресурсы
+# =============================================================================
+
+performance:
+  max_execution_hours: 2
+  max_memory_gb: 8
+  n_jobs: -1
+  wasserstein_cache_size: 10000
+  
+  parallel:
+    enabled: true
+    backend: joblib
+    batch_size: 100
+  
+  memory:
+    cleanup_on_exit: true
+    max_cache_mb: 500

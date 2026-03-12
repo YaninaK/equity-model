@@ -1,0 +1,44 @@
+# config/clustering.yaml
+# =============================================================================
+# Clustering Configuration (Этап 2)
+# Параметры кластеризации активов
+# =============================================================================
+
+clustering:
+  recluster_frequency_days: 63
+  k_min: 2
+  k_max: 15
+  k_target: 7
+  ari_threshold: 0.7
+  silhouette_threshold: 0.3
+  active_regimes:
+    - BULL_LOW
+    - BULL_HIGH
+    - BEAR_LOW
+    - BEAR_HIGH
+
+history_groups:
+  A:
+    min_days: 0
+    max_days: 30
+    method: sector_proxy_market
+  B:
+    min_days: 30
+    max_days: 100
+    method: wasserstein
+  C:
+    min_days: 100
+    max_days: 200
+    method: pearson_sma
+  D:
+    min_days: 200
+    max_days: null
+    method: pearson_ewma
+
+correlation:
+  ewma_lambda: 0.94
+  ewma_window: 504
+  sma_window: 50
+  min_sector_size: 3
+  liquid_illiquid_cap: 0.75
+  min_corr_window: 30

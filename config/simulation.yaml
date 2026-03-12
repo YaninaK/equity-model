@@ -1,0 +1,39 @@
+# config/simulation.yaml
+# =============================================================================
+# Simulation Configuration (Этап 3)
+# Monte Carlo, PFE, стресс-тесты
+# =============================================================================
+
+monte_carlo:
+  n_paths_base: 10000
+  n_paths_stress: 50000
+  short_term_horizon: 90
+  long_term_horizon: 14600
+  var_confidence_levels: [0.95, 0.99]
+  
+  pfe:
+    horizon_days: 252
+    confidence_level: 0.95
+    ead_alpha: 1.4
+  
+  garch:
+    low_vol: {alpha: 0.08, beta: 0.90, omega: 0.02}
+    normal_vol: {alpha: 0.10, beta: 0.85, omega: 0.05}
+    high_vol: {alpha: 0.15, beta: 0.80, omega: 0.10}
+
+stress_testing:
+  jump_process:
+    lambda: 0.05
+    expected_jump: -0.40
+    correlation_spike: 0.99
+    spike_duration_days: 10
+  
+  presets:
+    market_crash: {drop: -0.30, duration_days: 21}
+    volatility_spike: {sigma_multiplier: 3.0, duration_days: 60}
+    liquidity_freeze: {trading_days: 0, duration_days: 60}
+
+export:
+  formats: [csv, parquet, yaml]
+  include_visualization: true
+  visualization_dpi: 150
