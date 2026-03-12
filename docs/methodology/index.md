@@ -396,9 +396,11 @@ $$ \text{EAD}(T) = \alpha \times \max(\text{EPE}(T)), \text{ где } \alpha = 1
 ### 10.5. Тесты качества VaR
 
 **Тест Купиека (безусловное покрытие):**
+
 $$ LR_{uc} = -2 \times \ln\left((1-\alpha)^{N-x} \times \alpha^x\right) + 2 \times \ln\left((1-\frac{x}{N})^{N-x} \times (\frac{x}{N})^x\right) $$
 
 **Тест Кристофферсена (независимость промахов):**
+
 $$ LR_{ind} = -2 \times \ln\left(\frac{L(\Pi_0)}{L(\Pi_1)}\right) $$
 
 **Критерий:** p-value > 0.05 для обоих тестов
