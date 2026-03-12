@@ -146,6 +146,7 @@ def validate_walk_forward(results):
 ### 4.1. Тест Купиека (Unconditional Coverage)
 
 **Формула:**
+
 $$ LR_{uc} = -2 \times \ln\left((1-\alpha)^{N-x} \times \alpha^x\right) + 2 \times \ln\left((1-\frac{x}{N})^{N-x} \times (\frac{x}{N})^x\right) $$
 
 **Где:**
@@ -162,6 +163,7 @@ $$ LR_{uc} = -2 \times \ln\left((1-\alpha)^{N-x} \times \alpha^x\right) + 2 \tim
 ### 4.2. Тест Кристофферсена (Independence)
 
 **Формула:**
+
 $$ LR_{ind} = -2 \times \ln\left(\frac{L(\Pi_0)}{L(\Pi_1)}\right) $$
 
 **Где:**
@@ -175,6 +177,7 @@ $$ LR_{ind} = -2 \times \ln\left(\frac{L(\Pi_0)}{L(\Pi_1)}\right) $$
 ### 4.3. Тест условного покрытия (Conditional Coverage)
 
 **Формула:**
+
 $$ LR_{cc} = LR_{uc} + LR_{ind} $$
 
 **Распределение:** $LR_{cc} \sim \chi^2(2)$
@@ -185,11 +188,11 @@ $$ LR_{cc} = LR_{uc} + LR_{ind} $$
 
 | Раздел | Требование | Реализация | Статус |
 | :--- | :--- | :--- | :--- |
-| **1.1 PFE(T, λ)** | Квантиль распределения | 95-й перцентиль из 10 000 путей | ✅ |
-| **1.2 EAD** | EAD = α × max EPE, α = 1.4 | Применяется к максимальному exposure | ✅ |
-| **1.2.1 EPE** | EPE = среднее по симуляциям | Среднее по всем 10 000 путей | ✅ |
-| **3.4.1 MR(T)*** | Haircuts по Vol Overlay | Динамические haircuts | ✅ |
-| **3.4.2 PR(T)*** | Процентный риск | High Vol → консервативные ставки | ✅ |
+| **1.1 PFE(T, λ)** | Квантиль распределения | 95-й перцентиль из 10 000 путей | PASS |
+| **1.2 EAD** | EAD = α × max EPE, α = 1.4 | Применяется к максимальному exposure | PASS |
+| **1.2.1 EPE** | EPE = среднее по симуляциям | Среднее по всем 10 000 путей | PASS |
+| **3.4.1 MR(T)*** | Haircuts по Vol Overlay | Динамические haircuts | PASS |
+| **3.4.2 PR(T)*** | Процентный риск | High Vol → консервативные ставки | PASS |
 
 ---
 
@@ -247,6 +250,7 @@ IMOEX просадка: -35%
 ### 6.1. Adjusted Rand Index (ARI)
 
 **Формула:**
+
 $$ \text{ARI} = \frac{\text{Index} - \text{Expected Index}}{\text{Max Index} - \text{Expected Index}} $$
 
 **Интерпретация:**
@@ -509,6 +513,6 @@ Fallback механизмы протестированы
 | [risk_parameters.md](risk_parameters.md) | Расчёт параметров риска |
 | [DEVELOPMENT_PLAN.md](../DEVELOPMENT_PLAN.md) | План разработки проекта |
 | [PFE_мethodology_compliance.md](PFE_мethodology_compliance.md) | Соответстиве Методологии PFE расчётов |
-| [2_Clustering_v2.ipynb](../../notebooks/2_Clustering_v2.ipynb) | Исходный ноутбук с тестами |
+| [2_Clustering_v2.ipynb](../../notebooks/2_Clustering_v2.ipynb) | Hоутбук с прототипом кластеризации и тестами |
 
 ---
