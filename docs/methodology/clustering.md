@@ -354,7 +354,7 @@ $$ \rho_{liquid-illiquid} = \min(\rho_{calculated}, 0.75) $$
 | :--- | :--- | :--- |
 | 1 | Корреляционная матрица | Симметрична, диагональ = 1.0 |
 | 2 | Классификация по истории | Все тикеры распределены |
-| 3 | Liquidity multiplier | 0.90→1.0, 0.50→1.5, 0.30→2.0 |
+| 3 | Liquidity multiplier | 0.90 -> 1.0, 0.50 -> 1.5, 0.30 -> 2.0 |
 | 4 | ARI расчёт | Идентичные метки = 1.0 |
 | 5 | Воспроизводимость | Одинаковый seed = одинаковый результат |
 | 6 | Wasserstein расстояние | Не NaN, ≥ 0 |
@@ -472,6 +472,6 @@ clustering:
 | [regimes.md](regimes.md) | Детали определения режимов |
 | [risk_parameters.md](risk_parameters.md) | Расчёт параметров риска |
 | [DEVELOPMENT_PLAN.md](../DEVELOPMENT_PLAN.md) | План разработки проекта |
-| [2_Clustering_v2.ipynb](../../notebooks/2_Clustering_v2.ipynb) | Исходный ноутбук с прототипом |
+| [2_Clustering_v2.ipynb](../../notebooks/2_Clustering_v2.ipynb) | Ноутбук с прототипом |
 
 ---
