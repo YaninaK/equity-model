@@ -527,6 +527,6 @@ $$ LR_{ind} = -2 \times \ln\left(\frac{L(\Pi_0)}{L(\Pi_1)}\right) $$
 | **План разработки** | [../DEVELOPMENT_PLAN.md](../DEVELOPMENT_PLAN.md) | Этапы 1–7 |
 | **Структура проекта** | [../STRUCTURE.md](../STRUCTURE.md) | Архитектура кода |
 | **PFE Methodology** | [PFE_мethodology_compliance.md](PFE_мethodology_compliance.md) | Соответствие требованиям регулятора |
-| **Исходный ноутбук** | [../../notebooks/2_Clustering_v2.ipynb](../../notebooks/2_Clustering_v2.ipynb) | Прототип кластеризации |
+| **Ноутбук с кластеризацией** | [../../notebooks/2_Clustering_v2.ipynb](../../notebooks/2_Clustering_v2.ipynb) | Прототип кластеризации |
 
 ---
