@@ -255,13 +255,15 @@ $$ \text{ARI} = \frac{\text{Index} - \text{Expected Index}}{\text{Max Index} - \
 
 ### 8.2. Кризисный режим (Freeze)
 
-**Источник конфигурации:** `config['crisis']` в `CLUSTERING_CONFIG`
+**Источник конфигурации:** `config/risk.yaml` -> `crisis`
 
-| Триггер | Порог | Источник |
+| Триггер | Порог | Настройка |
 | :--- | :--- | :--- |
-| VIX-RUS | > 40 | `config['crisis']['vix_threshold']` |
-| Просадка IMOEX | < -20% | `config['crisis']['imoex_drawdown']` |
-| Средняя корреляция | > 0.90 | `config['crisis']['correlation_spike']` |
+| VIX-RUS | > 40 | `crisis.vix_threshold` |
+| Просадка IMOEX | < -20% | `crisis.imoex_drawdown` |
+| Средняя корреляция | > 0.90 | `crisis.correlation_spike` |
+
+
 
 
 **Действия при активации:**
@@ -341,6 +343,19 @@ $$ \rho_{liquid-illiquid} = \min(\rho_{calculated}, 0.75) $$
 | Макс. память | 8 GB | `config['performance']['max_memory_gb']` |
 | Параллелизация | n_jobs = -1 | `config['performance']['n_jobs']` |
 | Кэш Wasserstein | 10,000 пар | `config['performance']['wasserstein_cache_size']` |
+
+
+### 11.1. Ограничения производительности
+
+**Источник конфигурации:** `config/performance.yaml` -> `performance`
+
+| Параметр | Значение | Настройка |
+| :--- | :--- | :--- |
+| Макс. время выполнения | 2 часа | `performance.max_execution_hours` |
+| Макс. память | 8 GB | `performance.max_memory_gb` |
+| Параллелизация | n_jobs = -1 | `performance.n_jobs` |
+| Кэш Wasserstein | 10,000 пар | `performance.wasserstein_cache_size` |
+
 
 ### 11.2. Оптимизации
 

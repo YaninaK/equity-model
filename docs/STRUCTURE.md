@@ -92,12 +92,25 @@ uv run python scripts/run_daily_pipeline.py
 
 ### `config/` — Конфигурация
 
-| Файл | Описание |
-| :--- | :--- |
-| `base.yaml` | Базовая конфигурация |
-| `production.yaml` | Production настройки |
-| `development.yaml` | Development настройки |
-| `logging.yaml` | Настройки логирования |
+```
+config/
+├── base.yaml        # Общие настройки, пути, логирование
+├── data.yaml        # Источники данных, валидация
+├── clustering.yaml  # Параметры кластеризации (k, ARI, история)
+├── regimes.yaml     # Рыночные режимы (9 состояний, детекция)
+├── risk.yaml        # Параметры риска (консервативные, ликвидность, кризис)
+├── simulation.yaml  # Monte Carlo, PFE, стресс-тесты
+└── performance.yaml # Производительность, кэширование, ресурсы
+```
+
+**Загрузка:**
+```python
+
+from equity_model.config.loader import load_config, get_risk_config
+
+config = load_config()              # Все конфиги
+risk_config = get_risk_config()     # Только риск-параметры
+```
 
 ---
 
