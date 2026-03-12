@@ -135,15 +135,9 @@ $$ \text{Direction\_Score} = \sum_{i=1}^{5} (\text{Indicator\_Value}_i \times \t
 
 ### 4.3. Volatility Overlay (Уровень волатильности)
 
-<div style="text-align: left;">
-
 ```math
-$$ \text{Vol\_Score} = 0.60 \times \text{VIX\_Normalized} + 0.40 \times \text{Hist\_Vol\_Normalized}$$
+$$\displaystyle \text{Vol\_Score} = 0.60 \times \text{VIX\_Normalized} + 0.40 \times \text{Hist\_Vol\_Normalized}$$
 ```
-
-</div>
-
-
 
 | Уровень Vol | VIX-RUS | Историческая Vol (20д) | Параметры модели |
 | :--- | :--- | :--- | :--- |
