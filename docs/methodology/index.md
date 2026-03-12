@@ -140,7 +140,6 @@ $$ \text{Direction\_Score} = \sum_{i=1}^{5} (\text{Indicator\_Value}_i \times \t
 $$ \text{Vol\_Score} = 0.60 \times \text{VIX\_Normalized} + 0.40 \times \text{Hist\_Vol\_Normalized}$$
 ```
 
-
 | Уровень Vol | VIX-RUS | Историческая Vol (20д) | Параметры модели |
 | :--- | :--- | :--- | :--- |
 | **Low Vol** | < 20 | < 15% | Стандартные (σ × 0.8) |
@@ -156,8 +155,8 @@ $$ \text{Vol\_Score} = 0.60 \times \text{VIX\_Normalized} + 0.40 \times \text{Hi
 Для долгосрочной модели режимы переключаются по цепи Маркова:
 
 ```
-P = | P(Bull→Bull)    P(Bull→Bear)  |
-    | P(Bear→Bull)   P(Bear→Bear)  |
+P = | P(Bull -> Bull)    P(Bull -> Bear)  |
+    | P(Bear -> Bull)    P(Bear -> Bear)  |
 ```
 
 | Переход | Вероятность (в день) | Вероятность (в год) |
@@ -336,13 +335,17 @@ $$ \max(\text{Цена}_t / \text{Цена}_{t-252}) \leq 10 \text{ для лю�
 ### 9.2. Jump-процесс (Катастрофы)
 
 **Частота событий:**
+
 $$ N \sim \text{Poisson}(\lambda \times T) $$
+
 Где λ = 0.05 (1 событие за 20 лет)
 
 **Величина падения:**
+
 $$ \text{Jump} \sim \text{LogNormal}(\mu, \sigma), \text{ где } E[\text{Jump}] = -40\% $$
 
 **Влияние на корреляции:**
+
 $$ \rho_{ij, shock} = 0.99 \text{ для всех } i, j \text{ на период 5–10 дней после шока} $$
 
 ### 9.3. Пресеты стресс-сценариев
