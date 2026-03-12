@@ -230,7 +230,7 @@ epsilon_{t-1} = epsilon_t
 | **VaR (99%)** | 1-й перцентиль распределения $V_m(T)$ | Стресс-лимиты |
 | **PFE** | $q_{0.95}(V_1(T), ..., V_M(T))$ | PFE Methodology Раздел 1.1 |
 | **EAD** | $1.4 \times \max(EPE(T))$ | PFE Methodology Раздел 1.2 |
-| **Expected Shortfall** | $E[L | L > VaR_{95\%}]$ | Дополнительная метрика |
+| **Expected Shortfall** | $`E[L \| L > VaR_{95\%}]`$ | Дополнительная метрика |
 
 ---
 
